@@ -25,9 +25,15 @@ nav .nav_item{
   flex-wrap: wrap;
   list-style: none;
 }
+nav .nav_item .nav_bttn2,
 nav .nav_item .nav_bttn{
   margin: 0 5px;
 }
+nav .nav_item .nav_bttn1{
+  display: none;
+}
+nav .nav_item .nav_bttn1 a,
+nav .nav_item .nav_bttn2 a,
 nav .nav_item .nav_bttn a{
   color: #f2f2f2;
   text-decoration: none;
@@ -38,6 +44,7 @@ nav .nav_item .nav_bttn a{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
+nav .nav_item .nav_bttn2 a:hover,
 nav .nav_item .nav_bttn a.active,
 nav .nav_item .nav_bttn a:hover{
   color: #111;
@@ -58,12 +65,19 @@ input[type="checkbox"]{
   }
 }
 @media (max-width: 920px) {
+  nav .nav_item .nav_bttn1{
+    display: block;
+  }
+  nav .nav_item .nav_bttn2{
+    display: none;
+  }
   nav .menu-btn i{
     display: block;
   }
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
+
   nav .nav_item{
     position: fixed;
     top: 80px;
@@ -75,23 +89,27 @@ input[type="checkbox"]{
     display: block;
     transition: all 0.3s ease;
   }
-  #click:checked ~ ul{
+  #click:checked ~ .nav_item{
     left: 0;
   }
-  nav .nav_item li{
+  nav .nav_item .nav_bttn1,
+  nav .nav_item .nav_bttn {
     width: 100%;
     margin: 40px 0;
   }
-  nav .nav_item li a{
+  nav .nav_item .nav_bttn1 a,
+  nav .nav_item .nav_bttn a{
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  #click:checked ~ ul li a{
+  #click:checked ~ .nav_item .nav_bttn1 a,
+  #click:checked ~ .nav_item .nav_bttn a{
     margin-left: 0px;
   }
+  nav .nav_item .nav_bttn1 a:hover,
   nav .nav_item .nav_bttn a.active,
   nav .nav_item .nav_bttn a:hover{
     background: none;
