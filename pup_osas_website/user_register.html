@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | PUPBC OSAS</title>
-    <link rel="stylesheet" href="css/user_login.css">
+    <title>Signup | PUPBC OSAS</title>
+    <link rel="stylesheet" href="css/user_reg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="title"><span>Login</span></div>
+        <div class="title"><span>Signup</span></div>
         <form action="#">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="First Name" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Last Name" required>
+          </div>
           <div class="row">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Email" required>
@@ -20,11 +28,13 @@
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" required>
           </div>
-          <div class="pass"><a href="#">Forgot password?</a></div>
-          <div class="row button">
-            <input type="button" value="Login" onclick="location.href='user_index.html';">
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" required>
           </div>
-          <div class="signup-link">Doesn't have Account yet? <a href="user_register.html">Signup now</a></div>
+          <div class="row button">
+            <input type="button" value="Signup" onclick="location.href='user_index.html';">
+          </div>
         </form>
       </div>
     </div>

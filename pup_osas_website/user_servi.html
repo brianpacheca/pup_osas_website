@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Service | PUPBC OSAS</title>
     <link rel="stylesheet" href="css/nav_style.css">
+	<link rel="stylesheet" href="css/user_nofi_dd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,11 +15,48 @@
     <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
     </label>
-    <ul>
-        <li><a href="user_index.html">Home</a></li>
-        <li><a href="user_notif.html">Notification</a></li>
-        <li><a class="active" href="user_servi.html">Services</a></li>
-        <li><a href="user_acc.html">User</a></li>
+    <ul class="nav_item">
+        <li class="nav_bttn"><a href="user_index.html">Home</a></li>
+        <li class="nav_bttn"><a class="active" href="user_servi.html">Services</a></li>
+
+        <li class="nav_bttn" onclick="toggleNotifi()" ><a href="#">Notification</a></li>
+
+        <div class="notifi-box" id="box">
+			<li class="bttn"><a class="btn" href="user_notif.html">See All</a></li>
+			<div class="notifi-item">
+				<img src="img/avatar1.png" alt="img">
+				<div class="text">
+				   <h4>Elias Abdurrahman</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="img/avatar2.png" alt="img">
+				<div class="text">
+				   <h4>John Doe</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="img/avatar3.png" alt="img">
+				<div class="text">
+				   <h4>Emad Ali</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="img/avatar4.png" alt="img">
+				<div class="text">
+				   <h4>Ekram Abu </h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+		</div>
+
+        <li class="nav_bttn"><a href="user_acc.html">User</a></li>
     </ul>
     </nav>
     <div class="content">
@@ -29,5 +67,7 @@
             
         </div>
     </div>
+
+	<script src="js/user_noti.js"></script>
 </body>
 </html>
