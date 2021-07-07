@@ -64,7 +64,7 @@
   background: rgba(63, 63, 63, 0.692);
 }
 
-@media(max-width: 1360px){
+@media(max-width: 1369px){
   .top-box{
     grid-template-areas: 
     'studentInfo studentInfo'

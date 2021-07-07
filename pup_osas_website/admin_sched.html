@@ -27,13 +27,47 @@
       </nav>
     </div>
     <section class="content">
-      <h2>Schedule</h2>
+      <h2 class="title">Schedule</h2>
       <div class="top-box top-box-a">
-          
+         <!--<input type="date" id="appoint-date">-->
+         <div class="app-sched">
+           <h2>Appointment Schedule</h2>
+           <div class="app-list">
+              <div class="app-item">
+                <p>No Appointment Today</p>
+                <a href="#">View Details</a>
+              </div>
+           </div>
+         </div>
       </div>
       <div class="top-box top-box-b">
-          
-      </div> 
+        <div class="add-sched">
+          <div class="add-app-sched">
+            <input class="bttn" type="button" value="Add Schedule Appointment" onclick="location.href='#';">
+          </div>
+        </div>
+      </div>
+      <div class="top-box top-box-c">
+        <div class="app-transac">
+          <h2>Previous Appoinment</h2>
+          <table class="app-td-list">
+             <tr class="app-title">
+               <th>Student Name</th>
+               <th>Student Number</th>
+               <th>Appointment Date and Time</th>
+               <th>Status</th>
+             </tr>
+             <tr class="app-td-item">
+              <td>Student Name</th>
+              <td>Student Number</td>
+              <td>Date and Time</th>
+              <td>Status</th>
+            </tr>
+          </table>
+        </div>
+      </div>
   </section>
+
+  <!--<script src="js/app_date_time.js"></script>-->
   </body>
 </html>
